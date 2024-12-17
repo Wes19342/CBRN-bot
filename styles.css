@@ -12,48 +12,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    animation: fadeIn 1.5s ease-in-out;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.cta-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #9b51e0;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background-color: #8a43c6;
-    transform: translateY(-5px);
-}
-
 /* Dashboard Layout */
 .dashboard-container {
     display: flex;
@@ -100,33 +58,109 @@ body {
     padding: 30px;
 }
 
-.dashboard-main h1 {
-    margin-bottom: 20px;
-}
-
-.dashboard-cards {
+/* Banner */
+.banner {
     display: flex;
-    gap: 20px;
-}
-
-.card {
-    background-color: #333;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.card h3 {
+.server-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.server-info h1 {
+    font-size: 2.5rem;
+}
+
+.server-info p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* Clan Leader */
+.clan-leader {
+    margin: 20px 0;
+}
+
+.leader-card {
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.leader-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #9b51e0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background-color: #8a43c6;
+}
+
+/* Member List */
+.member-list {
+    margin-top: 20px;
+}
+
+.member-list h2 {
     margin-bottom: 10px;
     color: #9b51e0;
 }
 
-.settings {
-    margin-top: 30px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #252525;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.settings h2 {
-    margin-bottom: 15px;
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #333;
+    color: #9b51e0;
+}
+
+.member-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
