@@ -7,87 +7,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2>Usual</h2>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">Dashboard</a></li>
-                    <li><a href="#">Server Stats</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="server-banner">
+            <img src="https://via.placeholder.com/80" alt="Server Logo" class="server-logo">
+            <h1>Server Name</h1>
+        </div>
+    </header>
 
-        <!-- Main Content -->
-        <main class="dashboard-main">
-            <!-- Banner -->
-            <section class="banner">
-                <img src="https://via.placeholder.com/100" alt="Server Logo" class="server-logo">
-                <div class="server-info">
-                    <h1>Server Name</h1>
-                    <p>Welcome to your server dashboard!</p>
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <!-- Clan Leader Section -->
+        <section class="clan-leader">
+            <h2>Clan Leader</h2>
+            <div class="leader-card">
+                <img src="https://via.placeholder.com/80" alt="Leader Avatar" class="leader-avatar">
+                <div>
+                    <h3>Username</h3>
+                    <p>Server Owner</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Clan Leader Info -->
-            <section class="clan-leader">
-                <h2>Clan Leader</h2>
-                <div class="leader-card">
-                    <img src="https://via.placeholder.com/80" alt="Leader Avatar" class="leader-avatar">
-                    <div>
-                        <h3>Username</h3>
-                        <p>Server Owner</p>
+        <!-- Member List Section -->
+        <section class="member-list">
+            <h2>Server Members</h2>
+            <div class="member-cards">
+                <!-- Example Member Card -->
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/60" alt="Member Avatar" class="member-avatar">
+                    <div class="member-info">
+                        <h3>RandomUser1</h3>
+                        <p>Role: Admin</p>
+                        <p>Status: Online</p>
                     </div>
                 </div>
-            </section>
-
-            <!-- Action Buttons -->
-            <section class="action-buttons">
-                <button class="cta-button">Update Prefix</button>
-                <button class="cta-button">Manage Roles</button>
-                <button class="cta-button">Kick Members</button>
-            </section>
-
-            <!-- Member List -->
-            <section class="member-list">
-                <h2>Server Members</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Avatar</th>
-                            <th>Username</th>
-                            <th>Role</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Example Rows -->
-                        <tr>
-                            <td><img src="https://via.placeholder.com/50" alt="Member Avatar" class="member-avatar"></td>
-                            <td>RandomUser1</td>
-                            <td>Admin</td>
-                            <td>Online</td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://via.placeholder.com/50" alt="Member Avatar" class="member-avatar"></td>
-                            <td>RandomUser2</td>
-                            <td>Moderator</td>
-                            <td>Offline</td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://via.placeholder.com/50" alt="Member Avatar" class="member-avatar"></td>
-                            <td>RandomUser3</td>
-                            <td>Member</td>
-                            <td>Online</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-    </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/60" alt="Member Avatar" class="member-avatar">
+                    <div class="member-info">
+                        <h3>RandomUser2</h3>
+                        <p>Role: Moderator</p>
+                        <p>Status: Offline</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/60" alt="Member Avatar" class="member-avatar">
+                    <div class="member-info">
+                        <h3>RandomUser3</h3>
+                        <p>Role: Member</p>
+                        <p>Status: Online</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
